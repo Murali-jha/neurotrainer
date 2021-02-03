@@ -1,0 +1,88 @@
+[
+    {
+        "1": "What are the only animals that can't jump?",
+        "2": "Like fingerprints, everyone's ___________ is different?",
+        "3": "The only food that doesn't spoil is?",
+        "4": "You can't kill yourself by holding your _________?",
+        "5": "What is the longest word that can be made using the letters only on one row on the keyboard?",
+        "6": "What is the longest muscle in the body?",
+        "7": "What is the most common name in the world?.",
+        "8": "Which gas can kill a person in less than 15 minutes?",
+        "9": "The electric chair was invented by ________ ?",
+        "10": "Which Human bones are stronger than concrete?"
+    },
+    {
+        "1": {
+            "a": "Rhinoceros",
+            "b": "Dinosaur",
+            "c": "Elephants",
+            "d": "Whale"
+        },
+        "2": {
+            "a": "Tongue print",
+            "b": "Foot print",
+            "c": "Elbow Print",
+            "d": "None"
+        },
+        "3": {
+            "a": "Soups",
+            "b": "Baked Beans",
+            "c": "Butter",
+            "d": "Honey"
+        },
+        "4": {
+            "a": "Teeth",
+            "b": "Nose",
+            "c": "Tongue",
+            "d": "Hair"
+        },
+        "5": {
+            "a": "Adaptation",
+            "b": "Lightboard",
+            "c": "Typewriter",
+            "d": "Apocalypse"
+        },
+        "6": {
+            "a": "Deltoid",
+            "b": "Tongue",
+            "c": "Biceps",
+            "d": "Adductor"
+        },
+        "7": {
+            "a": "James",
+            "b": "John",
+            "c": "Robert",
+            "d": "Mohammed"
+        },
+        "8": {
+            "a": "Carbon monoxide",
+            "b": "Methane",
+            "c": "Ozone gas",
+            "d": "Neon"
+        },
+        "9": {
+            "a": "Lawyer",
+            "b": "Teacher",
+            "c": "Dentist",
+            "d": "App Developer"
+        },
+        "10": {
+            "a": "Breastbone",
+            "b": "Arms",
+            "c": "Thigh",
+            "d": "Ribs"
+        }
+    },
+    {
+        "1": "Elephants",
+        "2": "Tongue print",
+        "3": "Honey",
+        "4": "Teeth",
+        "5": "Typewriter",
+        "6": "Tongue",
+        "7": "Mohammed",
+        "8": "Carbon monoxide",
+        "9": "Dentist",
+        "10": "Thigh"
+    }
+]

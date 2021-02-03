@@ -1,0 +1,88 @@
+[
+    {
+        "1": "Ctrl, Shift and Alt are called .......... keys.",
+        "2": "MS-Word is an example of _____",
+        "3": "The purest form of iron is ?",
+        "4": "Fathometer is used to measure?",
+        "5": "The working principle of a washing machine is?",
+        "6": "Who is the author of the book 'Freedom Behind Bars '?",
+        "7": "Which river of India is called Vridha Ganga?",
+        "8": "A computer cannot \"boot\" if it does not have the _____",
+        "9": "Which latitude passes through the middle of India?",
+        "10": "Hydrogen bomb is based on the principle of ______"
+    },
+    {
+        "1": {
+            "a": "modifier",
+            "b": "function",
+            "c": "alphanumeric",
+            "d": "adjustment"
+        },
+        "2": {
+            "a": "An operating system",
+            "b": "A processing device",
+            "c": "Application software",
+            "d": "An input device"
+        },
+        "3": {
+            "a": "wrought iron",
+            "b": "steel",
+            "c": "pig iron",
+            "d": "nickel steel"
+        },
+        "4": {
+            "a": "Earthquakes",
+            "b": "Rainfall",
+            "c": "Ocean depth",
+            "d": "Sound intensity"
+        },
+        "5": {
+            "a": " reverse osmosis",
+            "b": "diffusion",
+            "c": "centrifugation",
+            "d": "dialysis"
+        },
+        "6": {
+            "a": "Kiran Bedi",
+            "b": "Jawaharlal Nehru",
+            "c": "Nelson Mandela",
+            "d": "Sheikh Abdullah"
+        },
+        "7": {
+            "a": "Krishna",
+            "b": "Godavari",
+            "c": "Kaveri",
+            "d": "Narmada"
+        },
+        "8": {
+            "a": "Compiler",
+            "b": "Loader",
+            "c": "Operating system",
+            "d": "Assembler"
+        },
+        "9": {
+            "a": "Equator",
+            "b": "Arctic Circle",
+            "c": "Tropic of Capricorn",
+            "d": "Tropic of Cancer"
+        },
+        "10": {
+            "a": "nuclear fission",
+            "b": "nuclear fusion",
+            "c": "natural radioactivity",
+            "d": "artificial radioactivity"
+        }
+    },
+    {
+        "1": "modifier",
+        "2": "Application software",
+        "3": "wrought iron",
+        "4": "Ocean depth",
+        "5": "centrifugation",
+        "6": "Kiran Bedi",
+        "7": "Godavari",
+        "8": "Operating system",
+        "9": "Tropic of Cancer",
+        "10": "nuclear fusion"
+    }
+]

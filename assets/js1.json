@@ -1,0 +1,88 @@
+[
+    {
+        "1": "What is the 16-bit compiler allowable range for integer constants?",
+        "2": "What is required in each C program?",
+        "3": "What is a lint?",
+        "4": "What is the output of this statement \"printf(\"%d\", (a++))\"?",
+        "5": "What does this declaration mean? \n int x : 4;  ",
+        "6": "How many times will the following loop execute? \n for(j = 1; j <= 10; j = j-1)  ",
+        "7": "A pointer is a memory address. Suppose the pointer variable has p address 1000, and that p is declared to have type int*, and an int is 4 bytes long. What address is represented by expression p + 2?",
+        "8": "Which one of the following is a loop construct that will always be executed once?",
+        "9": "How many characters can a string hold when declared as follows? \n char name[20]:  ",
+        "10": "Directives are translated by the"
+    },
+    {
+        "1": {
+            "a": "-3.4e38 to 3.4e38",
+            "b": "-32767 to 32768",
+            "c": "-32668 to 32667",
+            "d": "-32768 to 32767"
+        },
+        "2": {
+            "a": "At least one function",
+            "b": "Not require any function",
+            "c": "Input data",
+            "d": "Output data"
+        },
+        "3": {
+            "a": "C compiler",
+            "b": "Interactive debugger",
+            "c": "Analyzing tool",
+            "d": "C interpreter"
+        },
+        "4": {
+            "a": "The value of (a + 1)",
+            "b": "The current value of a",
+            "c": "Error message",
+            "d": "Garbage"
+        },
+        "5": {
+            "a": "X is a four-digit integer",
+            "b": "X cannot be greater than 4",
+            "c": "X is a four-bit integer",
+            "d": "None of the these"
+        },
+        "6": {
+            "a": "Forever",
+            "b": "Never",
+            "c": "0",
+            "d": "1"
+        },
+        "7": {
+            "a": "1002",
+            "b": "1004",
+            "c": "1006",
+            "d": "1008"
+        },
+        "8": {
+            "a": "for",
+            "b": "while",
+            "c": "switch",
+            "d": "do while"
+        },
+        "9": {
+            "a": "18",
+            "b": "19",
+            "c": "20",
+            "d": "None"
+        },
+        "10": {
+            "a": "Pre-processor",
+            "b": "Compiler",
+            "c": "Linker",
+            "d": "Editor"
+        }
+    },
+    {
+        "1": "-32768 to 32767",
+        "2": "At least one function",
+        "3": "Analyzing tool",
+        "4": "The current value of a",
+        "5": "X is a four-bit integer",
+        "6": "Forever",
+        "7": "1008",
+        "8": "do while",
+        "9": "20",
+        "10": "Pre-processor"
+    }
+]

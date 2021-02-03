@@ -1,0 +1,88 @@
+[
+    {
+        "1": "The term SPARMVs, sometimes seen in news, is most closely related to which organization?",
+        "2": "The Indian Prime Minister Narendra Modi recently inaugurated the Integrated Check Post at Jogbani-Biratnagar border, between India and which country?",
+        "3": "Which state has been ranked first in the list of India’s top 10 States for Leadership in Energy and Environmental Design (LEED)?",
+        "4": "Union Tribal Affairs Ministry of India has proposed 6th Schedule Area status to which Union Territory of India?",
+        "5": "Which state assembly recently passed a resolution to abolish the state’s legislative council?",
+        "6": "The national online platform for public procurement, Government e-Marketplace (GeM), was launched in which year?",
+        "7": "Which state hiked the MLAs’ Local Area Development Fund to Rs.3 Crore per year?",
+        "8": "The historic ‘City Chowk’ of which Indian state/ UT has been renamed as ‘Bharat Mata Chowk’?",
+        "9": "India recently signed a MoU with which country for developing co-operation in the power sector?",
+        "10": "Which state/UT has announced ‘Operation SHIELD’ in containment zones to contain the spread of COVID-19?"
+    },
+    {
+        "1": {
+            "a": "ISRO",
+            "b": "DRDO",
+            "c": "Indian Railways",
+            "d": "Indian Army"
+        },
+        "2": {
+            "a": "Bangladesh",
+            "b": "Nepal",
+            "c": "Bhutan",
+            "d": "Myanmar"
+        },
+        "3": {
+            "a": "Gujarat",
+            "b": "Karnataka",
+            "c": "Maharashtra",
+            "d": "Kerala"
+        },
+        "4": {
+            "a": "Jammu & Kashmir",
+            "b": "Ladakh",
+            "c": "Lakshadweep",
+            "d": "Andaman & Nicobar Islands"
+        },
+        "5": {
+            "a": "Telangana",
+            "b": "Maharashtra",
+            "c": "Andhra Pradesh",
+            "d": "Karnataka"
+        },
+        "6": {
+            "a": "2015",
+            "b": "2016",
+            "c": "2017",
+            "d": "2018"
+        },
+        "7": {
+            "a": "Maharashtra",
+            "b": "Punjab",
+            "c": "Uttar Pradesh",
+            "d": "Odisha"
+        },
+        "8": {
+            "a": "Himachal Pradesh",
+            "b": "Jammu & Kashmir",
+            "c": "Assam",
+            "d": "Uttarakhand"
+        },
+        "9": {
+            "a": "France",
+            "b": "Saudi Arabia",
+            "c": "Denmark",
+            "d": "New Zealand"
+        },
+        "10": {
+            "a": "Maharashtra",
+            "b": "Telangana",
+            "c": "New Delhi",
+            "d": "Punjab"
+        }
+    },
+    {
+        "1": "Indian Railways",
+        "2": "Nepal",
+        "3": "Maharashtra",
+        "4": "Ladakh",
+        "5": "Andhra Pradesh",
+        "6": "2016",
+        "7": "Uttar Pradesh",
+        "8": "Jammu & Kashmir",
+        "9": "Denmark",
+        "10": "New Delhi"
+    }
+]

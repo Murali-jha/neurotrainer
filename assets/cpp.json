@@ -1,0 +1,88 @@
+[
+    {
+        "1": "Orange",
+        "2": "Pink",
+        "3": "Grey",
+        "4": "Yellow",
+        "5": "Red",
+        "6": "Teal",
+        "7": "Purple",
+        "8": "Yellow",
+        "9": "Indigo",
+        "10": "Blue"
+    },
+    {
+        "1": {
+            "a": "Green",
+            "b": "Orange",
+            "c": "Yellow",
+            "d": "Amber"
+        },
+        "2": {
+            "a": "Pink",
+            "b": "Teal",
+            "c": "Purple",
+            "d": "Blue"
+        },
+        "3": {
+            "a": "Grey",
+            "b": "Teal",
+            "c": "Pink",
+            "d": "Light Teal"
+        },
+        "4": {
+            "a": "Pink",
+            "b": "Mirage",
+            "c": "Deep Pink",
+            "d": "Yellow"
+        },
+        "5": {
+            "a": "Purple Accent",
+            "b": "Grey",
+            "c": "Purple",
+            "d": "Red"
+        },
+        "6": {
+            "a": "Teal",
+            "b": "Yellow",
+            "c": "Orange",
+            "d": "Amber"
+        },
+        "7": {
+            "a": "Red",
+            "b": "Red Accent",
+            "c": "Green",
+            "d": "Purple"
+        },
+        "8": {
+            "a": "Amber",
+            "b": "Blue",
+            "c": "Indigo",
+            "d": "Yellow"
+        },
+        "9": {
+            "a": "Indigo",
+            "b": "Orange",
+            "c": "Black",
+            "d": "Light Blue"
+        },
+        "10": {
+            "a": "Green",
+            "b": "Blue",
+            "c": "Pink",
+            "d": "Indigo"
+        }
+    },
+    {
+        "1": "Green",
+        "2": "Blue",
+        "3": "Teal",
+        "4": "Pink",
+        "5": "Purple",
+        "6": "Orange",
+        "7": "Red",
+        "8": "Amber",
+        "9": "Black",
+        "10": "Indigo"
+    }
+]

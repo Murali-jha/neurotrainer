@@ -1,0 +1,88 @@
+[
+    {
+        "1": "Which of the following is not a Java features?",
+        "2": "The \\u0021 article referred to as a",
+        "3": "_____ is used to find and fix bugs in the Java programs.",
+        "4": "Which of the following is a valid declaration of a char?",
+        "5": "What is the return type of the hashCode() method in the Object class?",
+        "6": "Which of the following is a valid long literal?",
+        "7": "What does the expression float a = 35 / 0 return?",
+        "8": "Evaluate the following Java expression, if x=3, y=5, and z=10: \n ++z + y - y + z + x++",
+        "9": "Which of the following tool is used to generate API documentation in HTML format from doc comments in source code?",
+        "10": "Which of the following creates a List of 3 visible items and multiple selections abled?"
+    },
+    {
+        "1": {
+            "a": "Dynamic",
+            "b": "Architecture Neutral",
+            "c": "Use of pointers",
+            "d": "Object-oriented"
+        },
+        "2": {
+            "a": "Unicode escape sequence",
+            "b": "Octal escape",
+            "c": "Hexadecimal",
+            "d": "Line feed"
+        },
+        "3": {
+            "a": "JVM",
+            "b": "JRE",
+            "c": "JDK",
+            "d": "JDB"
+        },
+        "4": {
+            "a": "char ch = '\\utea';",
+            "b": "char ch = '\\utea';",
+            "c": "char ch = '\\utea';",
+            "d": "char ch = '\\utea';"
+        },
+        "5": {
+            "a": "Object",
+            "b": "int",
+            "c": "long",
+            "d": "void"
+        },
+        "6": {
+            "a": "ABH8097",
+            "b": "L990023",
+            "c": "904423",
+            "d": "0xnf029L"
+        },
+        "7": {
+            "a": "0",
+            "b": "Not a Number",
+            "c": "Infinity",
+            "d": "Run time exception"
+        },
+        "8": {
+            "a": "24",
+            "b": "23",
+            "c": "20",
+            "d": "25"
+        },
+        "9": {
+            "a": "javap tool",
+            "b": "javaw command",
+            "c": "Javadoc tool",
+            "d": "javah command"
+        },
+        "10": {
+            "a": "new List(false, 3)",
+            "b": "new List(3, true)",
+            "c": "new List(true, 3)",
+            "d": "new List(3, false)"
+        }
+    },
+    {
+        "1": "Object-oriented",
+        "2": "Unicode escape sequence",
+        "3": "JDB",
+        "4": "char ch = '\\utea';",
+        "5": "int",
+        "6": "0xnf029L",
+        "7": "Infinity",
+        "8": "24",
+        "9": "Javadoc tool",
+        "10": "new List(3, true)"
+    }
+]
