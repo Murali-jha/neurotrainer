@@ -86,6 +86,28 @@ class _DrawerAppState extends State<DrawerApp> {
                 onTap: () {
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) {
+                        return splashCommon(langname: "Memory");
+                      }));
+                },
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundImage: NetworkImage(
+                      "https://lh3.googleusercontent.com/proxy/pUe9b2y3yc2WriLEwC9ovCC4mXwRZraPBLr3YVDwUFysoHqZFON_TA712A30atCLOh1RGSc7qujbFCRJp15cNPZwR0_IA78Czl38CWBIdA"),
+                ),
+                title: Text(
+                  "Memory Game",
+                  style: TextStyle(color: Colors.white, fontSize: 18.0),
+                ),
+                subtitle:
+                Text("Challenge Your Memory", style: TextStyle(color: Colors.white)),
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              ListTile(
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) {
                     return programmingpage();
                   }));
                 },
@@ -168,6 +190,20 @@ class _DrawerAppState extends State<DrawerApp> {
                     style: TextStyle(color: Colors.white)),
               ),
               Divider(color: Colors.white,),
+              ListTile(
+                onTap: () {
+
+                },
+                leading: Icon(
+                    Icons.leaderboard
+                ),
+                title: Text(
+                  "LeaderBoard",
+                ),
+                subtitle: Text(
+                  "Coming Soon"
+                ),
+              ),
               ListTile(
                 onTap: () {
                   final RenderBox box = context.findRenderObject();

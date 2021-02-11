@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
@@ -30,8 +31,12 @@ class _resultpageState extends State<resultpage> {
     });
   }
 
+  final assetsAudioPlayer = AssetsAudioPlayer();
   @override
   void initState(){
+    assetsAudioPlayer.open(
+      Audio("audios/result.mp3"),
+    );
     if(marks <= 20){
       image = images[2];
       message = "You Should Try Hard..\n" + "You Scored $marks points";

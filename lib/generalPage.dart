@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:stroop_test/resultpage.dart';
@@ -129,13 +130,26 @@ class _quizpageState extends State<quizpage> {
     starttimer();
   }
 
+  final audioPlayerCorrect = AssetsAudioPlayer();
+
+  final audioPlayerWrong = AssetsAudioPlayer();
   void checkAnswer(String k){
     if(mydata[2][i.toString()] == mydata[1][i.toString()][k]){
       marks = marks+5;
       colortoshow = right;
+      setState(() {
+        audioPlayerCorrect.open(
+          Audio("audios/correctmusic.mp3"),
+        );
+      });
     }
     else{
       colortoshow = wrong;
+      setState(() {
+        audioPlayerCorrect.open(
+          Audio("audios/wrongmusic.mp3"),
+        );
+      });
     }
     setState(() {
       btncolor[k] = colortoshow;
