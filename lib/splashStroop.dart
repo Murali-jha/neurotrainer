@@ -29,13 +29,13 @@ class _splashStroopState extends State<splashStroop> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo,
+      //backgroundColor: Colors.indigo,
       body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Loading....",
+                "Loading..",
                 style: TextStyle(
                     fontSize: 55.0,
                     color: Colors.white,

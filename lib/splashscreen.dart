@@ -23,7 +23,7 @@ class _splashscreenState extends State<splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo,
+      //backgroundColor: Colors.black45,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

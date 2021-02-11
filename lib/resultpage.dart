@@ -58,7 +58,10 @@ class _resultpageState extends State<resultpage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-
+        shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(
+        bottom: Radius.circular(20),
+    ),),
         title: Text("Result",style: TextStyle(fontFamily: "Quando",fontSize: 26.0),),
       ),
       body: Center(

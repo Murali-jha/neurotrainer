@@ -17,8 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Stroop Test',
       theme: ThemeData(
-        primaryColor: Colors.indigo,
-        //brightness: Brightness.dark,
+        brightness: Brightness.dark,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: splashscreen(),
