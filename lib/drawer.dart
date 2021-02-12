@@ -92,7 +92,7 @@ class _DrawerAppState extends State<DrawerApp> {
                 leading: CircleAvatar(
                   radius: 25.0,
                   backgroundImage: NetworkImage(
-                      "https://lh3.googleusercontent.com/proxy/pUe9b2y3yc2WriLEwC9ovCC4mXwRZraPBLr3YVDwUFysoHqZFON_TA712A30atCLOh1RGSc7qujbFCRJp15cNPZwR0_IA78Czl38CWBIdA"),
+                      "https://appoftheday.downloadastro.com/wp-content/uploads/2020/11/logo_512x512.png"),
                 ),
                 title: Text(
                   "Memory Game",

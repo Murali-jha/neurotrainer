@@ -136,7 +136,6 @@ class _quizpageState extends State<quizpage> {
   }
 
   final audioPlayerCorrect = AssetsAudioPlayer();
-
   final audioPlayerWrong = AssetsAudioPlayer();
 
   void startTimer() async{
