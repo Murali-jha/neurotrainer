@@ -5,12 +5,16 @@ import 'package:stroop_test/drawer.dart';
 import 'package:stroop_test/splashStroop.dart';
 
 class homepage extends StatefulWidget {
+  int i;
+  homepage({Key k,this.i}):super(key: k);
   @override
-  _homepageState createState() => _homepageState();
+  _homepageState createState() => _homepageState(i: i);
 }
 
 class _homepageState extends State<homepage> {
 
+  int i;
+  _homepageState({this.i});
   List<String> images =[
     "images/level1.png",
     "images/level2.png",
@@ -92,10 +96,13 @@ class _homepageState extends State<homepage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    assetsAudioPlayer.open(
-      Audio("audios/backgroundmusic.mp3"),
-    );
+    if(i!=1) {
+      assetsAudioPlayer.open(
+        Audio("audios/backgroundmusic.mp3"),
+      );
+    }
   }
+
   @override
   Widget build(BuildContext context) {
 

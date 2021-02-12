@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:stroop_test/programming.dart';
 import 'package:stroop_test/resultpage.dart';
 
 import 'home.dart';
@@ -109,7 +110,11 @@ class _quizpageState extends State<quizpage> {
     });
   }
 
+  bool isButtonEnabled = true;
   void nextQuestion(){
+    setState(() {
+      isButtonEnabled = true;
+    });
     canceltimer = false;
     timer=30;
     timerColor = Colors.green;
@@ -136,21 +141,27 @@ class _quizpageState extends State<quizpage> {
   final audioPlayerWrong = AssetsAudioPlayer();
   void checkAnswer(String k){
     if(mydata[2][i.toString()] == mydata[1][i.toString()][k]){
-      marks = marks+5;
-      colortoshow = right;
-      setState(() {
-        audioPlayerCorrect.open(
-          Audio("audios/correctmusic.mp3"),
-        );
-      });
+      if(isButtonEnabled==true){
+        marks = marks+5;
+        colortoshow = right;
+        setState(() {
+          audioPlayerCorrect.open(
+            Audio("audios/correctmusic.mp3"),
+          );
+          isButtonEnabled = false;
+        });
+      }
     }
     else{
-      colortoshow = wrong;
-      setState(() {
-        audioPlayerCorrect.open(
-          Audio("audios/wrongmusic.mp3"),
-        );
-      });
+      if(isButtonEnabled==true){
+        colortoshow = wrong;
+        setState(() {
+          audioPlayerCorrect.open(
+            Audio("audios/wrongmusic.mp3"),
+          );
+          isButtonEnabled=false;
+        });
+      }
     }
     setState(() {
       btncolor[k] = colortoshow;
@@ -211,7 +222,7 @@ class _quizpageState extends State<quizpage> {
                       color: Colors.red,
                       onPressed: (){
                         Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) =>
-                            homepage()), (Route<dynamic> route) => false);
+                            programmingpage()), (Route<dynamic> route) => false);
                       },
                       child: Text("Quit!",style: TextStyle(fontSize: 15.0),)
                   ),

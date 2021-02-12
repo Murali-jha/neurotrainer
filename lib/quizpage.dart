@@ -8,7 +8,7 @@ import 'package:flutter/services.dart';
 import 'package:stroop_test/home.dart';
 import 'package:stroop_test/resultpage.dart';
 
-class getjson extends StatelessWidget {
+class getjson extends StatelessWidget{
   String langname;
   getjson(this.langname);
   String assettoload;
@@ -126,6 +126,7 @@ class _quizpageState extends State<quizpage> {
 
   bool cancelTimer =false;
   Color questionColor = Colors.green;
+  bool isButtonEnabled = true;
   @override
   void initState() {
     // TODO: implement initState
@@ -161,6 +162,9 @@ class _quizpageState extends State<quizpage> {
   }
 
   void nextQuestion(){
+    setState(() {
+      isButtonEnabled = true;
+    });
     cancelTimer = false;
     setAsset();
     timerColor = Colors.green;
@@ -186,21 +190,27 @@ class _quizpageState extends State<quizpage> {
 
   void checkAnswer(String k){
     if(mydata[2][i.toString()] == mydata[1][i.toString()][k]){
-      marks = marks+5;
-      colorToShow = right;
-      setState(() {
-        audioPlayerCorrect.open(
-          Audio("audios/correctmusic.mp3"),
-        );
-      });
+      if(isButtonEnabled==true){
+        marks = marks+5;
+        colorToShow = right;
+        setState(() {
+          audioPlayerCorrect.open(
+            Audio("audios/correctmusic.mp3"),
+          );
+          isButtonEnabled = false;
+        });
+      }
     }
     else{
-      colorToShow = wrong;
-      setState(() {
-        audioPlayerCorrect.open(
-          Audio("audios/wrongmusic.mp3"),
-        );
-      });
+      if(isButtonEnabled==true){
+        colorToShow = wrong;
+        setState(() {
+          audioPlayerCorrect.open(
+            Audio("audios/wrongmusic.mp3"),
+          );
+          isButtonEnabled = false;
+        });
+      }
     }
     setState(() {
       btnColor[k] = colorToShow;
@@ -214,6 +224,7 @@ class _quizpageState extends State<quizpage> {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 10.0,horizontal: 20.0),
       child: MaterialButton(
+
         onPressed: () => checkAnswer(k),
         child: Text(
           mydata[1][i.toString()][k],
@@ -261,7 +272,7 @@ class _quizpageState extends State<quizpage> {
                       color: Colors.red,
                       onPressed: (){
                         Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) =>
-                            homepage()), (Route<dynamic> route) => false);
+                            homepage(i: 1)), (Route<dynamic> route) => false);
                       },
                       child: Text("Quit!",style: TextStyle(fontSize: 15.0),)
                   ),
