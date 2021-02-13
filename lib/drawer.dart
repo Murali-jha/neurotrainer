@@ -63,13 +63,14 @@ class _DrawerAppState extends State<DrawerApp> {
                 onTap: () {
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) {
-                    return homepage();
+                    return homepage(i: 1,);
                   }));
                 },
                 leading: CircleAvatar(
+                  backgroundColor: Colors.teal,
                   radius: 25.0,
                   backgroundImage: NetworkImage(
-                      "https://dl3.cbsistatic.com/catalog/2018/06/24/9e6b0a2a-5b26-480b-8aa4-8886778f2121/imgingest-7514079928221488315.jpg"),
+                      "https://image.winudf.com/v2/image/dGpheS5zdHJvb3BfaWNvbl8xNTE1MDAyNzI3XzA3OA/icon.png?w=170&fakeurl=1"),
                 ),
                 title: Text(
                   "Stroop Test",
@@ -93,7 +94,7 @@ class _DrawerAppState extends State<DrawerApp> {
                 leading: CircleAvatar(
                   radius: 25.0,
                   backgroundImage: NetworkImage(
-                      "https://appoftheday.downloadastro.com/wp-content/uploads/2020/11/logo_512x512.png"),
+                      "https://lh3.googleusercontent.com/proxy/Zo5dNrKyGCa7w8X1PgRQyR58LqKkrllGzHL2yt2gl008sAK_IHQnkbdBtb_Bq8GRg8AZrlpBSKOh1vDkkBzkX6kPvP05FFxW0no8ahmKYw"),
                 ),
                 title: Text(
                   "Memory Game",
@@ -115,7 +116,7 @@ class _DrawerAppState extends State<DrawerApp> {
                 leading: CircleAvatar(
                   radius: 25.0,
                   backgroundImage: NetworkImage(
-                      "https://images-na.ssl-images-amazon.com/images/I/417V9cmGNgL.png"),
+                      "https://i.pinimg.com/originals/93/d3/e3/93d3e31639a4d07613de9dccdc8bd5e8.png"),
                 ),
                 title: Text(
                   "Programming",
@@ -137,7 +138,7 @@ class _DrawerAppState extends State<DrawerApp> {
                 leading: CircleAvatar(
                   radius: 25.0,
                   backgroundImage: NetworkImage(
-                      "https://images-eu.ssl-images-amazon.com/images/I/51raPAhIGJL.png"),
+                      "https://st.depositphotos.com/1010751/4379/v/600/depositphotos_43790977-stock-illustration-vector-head-gears-abstraction-of.jpg"),
                 ),
                 title: Text(
                   "General",
@@ -181,7 +182,7 @@ class _DrawerAppState extends State<DrawerApp> {
                 leading: CircleAvatar(
                   radius: 25.0,
                   backgroundImage: NetworkImage(
-                      "https://images-na.ssl-images-amazon.com/images/I/61JJh+QddmL.png"),
+                      "https://media.istockphoto.com/vectors/did-you-know-text-on-a-fluid-trendy-shape-with-geometric-elements-and-vector-id1155336535?k=6&m=1155336535&s=612x612&w=0&h=oW4-w22rKp_rVHqitBP4-FTwd3a4lXfv5KUwF3qxJuA="),
                 ),
                 title: Text(
                   "Did you know?",

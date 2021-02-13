@@ -9,7 +9,10 @@
         "7": "Purple",
         "8": "Yellow",
         "9": "Indigo",
-        "10": "Blue"
+        "10": "Blue",
+        "11": "Green",
+        "12": "Teal",
+        "13": "Pink"
     },
     {
         "1": {
@@ -62,7 +65,7 @@
         },
         "9": {
             "a": "Indigo",
-            "b": "Orange",
+            "b": "White",
             "c": "Black",
             "d": "Light Blue"
         },
@@ -71,6 +74,24 @@
             "b": "Blue",
             "c": "Pink",
             "d": "Indigo"
+        },
+        "11": {
+            "a": "Green",
+            "b": "Blue",
+            "c": "Yellow Accent",
+            "d": "Brown"
+        },
+        "12": {
+            "a": "Brown",
+            "b": "Teal",
+            "c": "Pink",
+            "d": "Black"
+        },
+        "13": {
+            "a": "Red",
+            "b": "Blue",
+            "c": "Pink",
+            "d": "Lime"
         }
     },
     {
@@ -82,7 +103,10 @@
         "6": "Orange",
         "7": "Red",
         "8": "Amber",
-        "9": "Black",
-        "10": "Indigo"
+        "9": "White",
+        "10": "Indigo",
+        "11": "Yellow Accent",
+        "12": "Brown",
+        "13": "Lime"
     }
 ]

@@ -41,7 +41,7 @@ class _resultpageState extends State<resultpage> {
       image = images[2];
       message = "You Should Try Hard..\n" + "You Scored $marks points";
       generateConcentration(40,10);
-    }else if(marks > 20 && marks<=35){
+    }else if(marks > 20 && marks<=45){
       image = images[1];
       message = "You Can Do Better..\n" + "You Scored $marks points";
       generateConcentration(75,45);

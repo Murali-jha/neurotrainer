@@ -95,15 +95,19 @@ class _quizpageState extends State<quizpage> {
     Colors.deepOrange,
     Colors.red,
     Colors.amber,
-    Colors.black,
-    Colors.indigo
+    Colors.white,
+    Colors.indigo,
+    Colors.yellowAccent,
+    Colors.brown,
+    Colors.lime
+
   ];
 
   setAsset(){
     setState(() {
       if(stage == "Python"){
-        timer = 12;
-        showTimer = "12";
+        timer = 10;
+        showTimer = "10";
       }
       else if(stage == "Java"){
         timer = 8;
@@ -168,7 +172,7 @@ class _quizpageState extends State<quizpage> {
     setAsset();
     timerColor = Colors.green;
     setState(() {
-      if(i<10){
+      if(i<13){
         i++;
       }
       else{
