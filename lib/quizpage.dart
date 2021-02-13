@@ -185,7 +185,7 @@ class _quizpageState extends State<quizpage> {
       btnColor["c"] = Colors.indigoAccent;
       btnColor["d"] = Colors.indigoAccent;
       questionColor = color[i];
-      numberOfQuestionsRemaining = 10-i;
+      numberOfQuestionsRemaining = 13-i;
     });
     startTimer();
   }
