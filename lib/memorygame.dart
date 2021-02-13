@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:launch_review/launch_review.dart';
 import 'package:stroop_test/home.dart';
 
+import 'HelpPage.dart';
 import 'data/data.dart';
 import 'models/TileModel.dart';
 
@@ -27,7 +28,7 @@ class _MemoryGameState extends State<MemoryGame> {
     myPairs.shuffle();
 
     gridViewTiles = myPairs;
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 3), () {
 // Here you can write your code
       setState(() {
         print("2 seconds done");
@@ -78,13 +79,21 @@ class _MemoryGameState extends State<MemoryGame> {
       },
       child: Scaffold(
         appBar: AppBar(
+          actions: [
+            IconButton(
+                icon: Icon(Icons.help_outline),
+                onPressed: (){
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HelpApp()));
+                }
+            ),
+          ],
           centerTitle: true,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(
               bottom: Radius.circular(20),
             ),
           ),
-          title: Text("Memory Game",style: TextStyle(fontFamily: "Quando",fontSize: 26.0),),
+          title: Text("Memory Game",style: TextStyle(fontFamily: "Quando",fontSize: 22.0),),
         ),
         body: SingleChildScrollView(
           child: Container(

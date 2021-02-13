@@ -1,6 +1,7 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:stroop_test/HelpPage.dart';
 import 'package:stroop_test/drawer.dart';
 import 'package:stroop_test/splashStroop.dart';
 
@@ -33,7 +34,7 @@ class _homepageState extends State<homepage> {
 
   Widget customcard(String langname,String images,String description){
     return Padding(
-        padding: EdgeInsets.all(20.0),
+        padding: EdgeInsets.fromLTRB(20.0,10.0,20.0,10.0),
       child: InkWell(
         onTap: (){
           debugPrint("Card Tapped");
@@ -80,7 +81,7 @@ class _homepageState extends State<homepage> {
                       //color: Colors.white
                     ),
                     maxLines: 5,
-                    textAlign: TextAlign.justify,
+                    textAlign: TextAlign.center,
                   ),
                 )
               ],
@@ -148,12 +149,12 @@ class _homepageState extends State<homepage> {
               bottom: Radius.circular(20),
             ),
           ),
-          title: Text("Stroop Test",style: TextStyle(fontFamily: "Quando",fontSize: 26.0),),
+          title: Text("Stroop Test",style: TextStyle(fontFamily: "Quando",fontSize: 22.0),),
           actions: [
             IconButton(
                 icon: Icon(Icons.help_outline),
                 onPressed: (){
-
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HelpApp()));
                 }
             ),
           ],

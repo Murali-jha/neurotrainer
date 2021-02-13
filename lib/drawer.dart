@@ -4,6 +4,7 @@ import 'package:share/share.dart';
 import 'package:stroop_test/memorygame.dart';
 import 'package:stroop_test/programming.dart';
 
+import 'HelpPage.dart';
 import 'commonSplash.dart';
 import 'home.dart';
 
@@ -233,9 +234,9 @@ class _DrawerAppState extends State<DrawerApp> {
               ),
               ListTile(
                 onTap: () {
-                  // Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                  //   return HelpApp();
-                  // }));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                    return HelpApp();
+                  }));
                 },
                 leading: Icon(
                     Icons.help_outline_sharp

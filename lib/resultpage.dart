@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
 
+import 'HelpPage.dart';
 import 'home.dart';
 
 class resultpage extends StatefulWidget {
@@ -62,6 +63,14 @@ class _resultpageState extends State<resultpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(
+              icon: Icon(Icons.help_outline),
+              onPressed: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HelpApp()));
+              }
+          ),
+        ],
         centerTitle: true,
         shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(
@@ -118,7 +127,7 @@ class _resultpageState extends State<resultpage> {
                               child: Text(
                                 "Your Concentration is $randomNumber%",
                                 style: TextStyle(
-                                  fontSize: 25.0,
+                                  fontSize: 20.0,
                                   fontFamily: "Quando",
                                 ),
                               ),

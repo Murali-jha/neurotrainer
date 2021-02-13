@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:stroop_test/drawer.dart';
 import 'package:stroop_test/programmingpage.dart';
 
+import 'HelpPage.dart';
+
 
 class programmingpage extends StatefulWidget {
   @override
@@ -126,7 +128,7 @@ class _programmingState extends State<programmingpage> {
             IconButton(
                 icon: Icon(Icons.help_outline),
                 onPressed: (){
-
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HelpApp()));
                 }
             ),
           ],
@@ -136,7 +138,7 @@ class _programmingState extends State<programmingpage> {
               bottom: Radius.circular(20),
             ),
           ),
-          title: Text("Programming",style: TextStyle(fontFamily: "Quando",fontSize: 26.0),),
+          title: Text("Programming",style: TextStyle(fontFamily: "Quando",fontSize: 22.0),),
         ),
         body: ListView(
           children: [
