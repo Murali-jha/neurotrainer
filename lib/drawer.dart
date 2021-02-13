@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:launch_review/launch_review.dart';
 import 'package:share/share.dart';
+import 'package:stroop_test/memorygame.dart';
 import 'package:stroop_test/programming.dart';
 
 import 'commonSplash.dart';
@@ -86,7 +87,7 @@ class _DrawerAppState extends State<DrawerApp> {
                 onTap: () {
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) {
-                        return splashCommon(langname: "Memory");
+                        return MemoryGame();
                       }));
                 },
                 leading: CircleAvatar(

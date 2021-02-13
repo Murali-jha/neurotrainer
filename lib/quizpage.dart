@@ -204,7 +204,7 @@ class _quizpageState extends State<quizpage> {
       if(isButtonEnabled==true){
         colorToShow = wrong;
         setState(() {
-          audioPlayerCorrect.open(
+          audioPlayerWrong.open(
             Audio("audios/wrongmusic.mp3"),
           );
           isButtonEnabled = false;
