@@ -95,7 +95,7 @@ class _DrawerAppState extends State<DrawerApp> {
                 leading: CircleAvatar(
                   radius: 25.0,
                   backgroundImage: NetworkImage(
-                      "https://lh3.googleusercontent.com/proxy/Zo5dNrKyGCa7w8X1PgRQyR58LqKkrllGzHL2yt2gl008sAK_IHQnkbdBtb_Bq8GRg8AZrlpBSKOh1vDkkBzkX6kPvP05FFxW0no8ahmKYw"),
+                      "https://is5-ssl.mzstatic.com/image/thumb/Purple7/v4/4e/2d/69/4e2d697e-5589-9fab-a9ac-24337b091102/source/512x512bb.jpg"),
                 ),
                 title: Text(
                   "Memory Game",

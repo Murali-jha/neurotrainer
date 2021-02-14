@@ -29,7 +29,7 @@ class _programmingState extends State<programmingpage> {
 
   Widget customcard(String langname,String images,String description){
     return Padding(
-      padding: EdgeInsets.all(20.0),
+      padding: EdgeInsets.fromLTRB(20.0,10.0,20.0,10.0),
       child: InkWell(
         onTap: (){
           debugPrint("Card Tapped");
