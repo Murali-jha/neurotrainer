@@ -8,9 +8,10 @@ import 'home.dart';
 
 class resultpage extends StatefulWidget {
   int marks;
-  resultpage({Key key , @required this.marks}) : super(key : key);
+  int time;
+  resultpage({Key key , @required this.marks,this.time}) : super(key : key);
   @override
-  _resultpageState createState() => _resultpageState(marks);
+  _resultpageState createState() => _resultpageState(marks,time);
 }
 
 class _resultpageState extends State<resultpage> {
@@ -38,11 +39,11 @@ class _resultpageState extends State<resultpage> {
     assetsAudioPlayer.open(
       Audio("audios/result.mp3"),
     );
-    if(marks <= 20){
+    if(marks <= 30){
       image = images[2];
       message = "You Should Try Hard..\n" + "You Scored $marks points";
       generateConcentration(40,10);
-    }else if(marks > 20 && marks<=45){
+    }else if(marks > 30 && marks<=55){
       image = images[1];
       message = "You Can Do Better..\n" + "You Scored $marks points";
       generateConcentration(75,45);
@@ -58,7 +59,8 @@ class _resultpageState extends State<resultpage> {
 
 
   int marks;
-  _resultpageState(this.marks);
+  int time;
+  _resultpageState(this.marks,this.time);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +84,7 @@ class _resultpageState extends State<resultpage> {
         child: Column(
           children: <Widget>[
             Expanded(
-              flex: 8,
+              flex: 10,
               child: Material(
                 child: Container(
                   child: Center(
@@ -110,6 +112,22 @@ class _resultpageState extends State<resultpage> {
                             child: Center(
                               child: Text(
                                    message,
+                                style: TextStyle(
+                                  fontSize: 20.0,
+                                  fontFamily: "Quando",
+                                ),
+                              ),
+                            )
+                        ),
+
+                        Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 15.0,
+                              horizontal: 15.0,
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Total time taken: $time seconds",
                                 style: TextStyle(
                                   fontSize: 20.0,
                                   fontFamily: "Quando",

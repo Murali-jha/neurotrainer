@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -103,26 +102,33 @@ class _quizpageState extends State<quizpage> {
 
   ];
 
+  int total = 15;
+  int totalTime = 0;
   setAsset(){
     setState(() {
       if(stage == "Python"){
         timer = 10;
+        total = 10;
         showTimer = "10";
       }
       else if(stage == "Java"){
         timer = 8;
+        total = 8;
         showTimer = "8";
       }
       else if(stage == "Javascript"){
         timer = 5;
+        total = 5;
         showTimer = "5";
       }
       else if(stage == "cpp"){
         timer = 3;
+        total = 3;
         showTimer = "3";
       }
       else{
         timer = 2;
+        total = 2;
         showTimer = "2";
       }
     });
@@ -148,6 +154,9 @@ class _quizpageState extends State<quizpage> {
       setState(() {
         if(timer<1){
           t.cancel();
+          setState(() {
+            totalTime = totalTime + (total-timer);
+          });
           nextQuestion();
         }
         else if(cancelTimer == true){
@@ -177,7 +186,7 @@ class _quizpageState extends State<quizpage> {
       }
       else{
         Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context){
-          return resultpage(marks: marks);
+          return resultpage(marks: marks,time: totalTime,);
         }));
       }
       btnColor["a"] = Colors.indigoAccent;
@@ -191,12 +200,14 @@ class _quizpageState extends State<quizpage> {
   }
 
 
+
   void checkAnswer(String k){
     if(mydata[2][i.toString()] == mydata[1][i.toString()][k]){
       if(isButtonEnabled==true){
         marks = marks+5;
         colorToShow = right;
         setState(() {
+          totalTime = totalTime + (total-timer);
           audioPlayerCorrect.open(
             Audio("audios/correctmusic.mp3"),
           );
@@ -208,6 +219,7 @@ class _quizpageState extends State<quizpage> {
       if(isButtonEnabled==true){
         colorToShow = wrong;
         setState(() {
+          totalTime = totalTime + (total-timer);
           audioPlayerWrong.open(
             Audio("audios/wrongmusic.mp3"),
           );

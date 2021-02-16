@@ -79,7 +79,8 @@ class _quizpageState extends State<quizpage> {
   Color timerColor = Colors.green;
 
   bool canceltimer = false;
-
+  int total = 30;
+  int totalTime = 0;
 
   @override
   void initState() {
@@ -94,6 +95,9 @@ class _quizpageState extends State<quizpage> {
       setState(() {
         if (timer < 1) {
           t.cancel();
+          setState(() {
+            totalTime = totalTime + (total-timer);
+          });
           nextQuestion();
         } else if (canceltimer == true) {
           t.cancel();
@@ -124,7 +128,7 @@ class _quizpageState extends State<quizpage> {
       }
       else{
         Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context){
-          return resultpage(marks: marks);
+          return resultpage(marks: marks,time: totalTime,);
         }));
       }
       btncolor["a"] = Colors.indigoAccent;
@@ -145,6 +149,7 @@ class _quizpageState extends State<quizpage> {
         marks = marks+5;
         colortoshow = right;
         setState(() {
+          totalTime = totalTime + (total-timer);
           audioPlayerCorrect.open(
             Audio("audios/correctmusic.mp3"),
           );
@@ -156,6 +161,7 @@ class _quizpageState extends State<quizpage> {
       if(isButtonEnabled==true){
         colortoshow = wrong;
         setState(() {
+          totalTime = totalTime + (total-timer);
           audioPlayerCorrect.open(
             Audio("audios/wrongmusic.mp3"),
           );
