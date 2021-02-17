@@ -84,7 +84,7 @@ class _resultpageState extends State<resultpage> {
         child: Column(
           children: <Widget>[
             Expanded(
-              flex: 10,
+              flex: 12,
               child: Material(
                 child: Container(
                   child: Center(
@@ -93,8 +93,8 @@ class _resultpageState extends State<resultpage> {
                       children: <Widget>[
                         Material(
                           child: Container(
-                            width: 300.0,
-                            height: 300.0,
+                            width: 280.0,
+                            height: 280.0,
                             child: ClipRect(
                               child: Image(
                                 image: AssetImage(
